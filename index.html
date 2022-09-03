@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="img/Logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Juego del Ahorcado</title>
+    <script src="code.js" defer></script>
+  </head>
+  <body>
+    <img src="img/Logo.png" id="logo" />
+    <div id="homePage" class="flex">
+      <button class="btnBlue btn1" id="startGameBtn">Iniciar Juego</button>
+      <button class="btnGrey" id="addBtn">Agregar una palabra</button>
+    </div>
+    <div id="add-word" class="display">
+      <textarea
+        type="text"
+        placeholder="Ingrese una palabra"
+        maxlength="8"
+      ></textarea>
+      <div id="btnSection">
+        <div id="container1">
+          <img src="img/normal.svg" id="exclamation" />
+          <p id="text1" class="text1">Máx. 8 letras</p>
+        </div>
+        <div id="containerBtn">
+          <button class="btnBlue" id="saveBtn">Guardar y empezar</button> 
+        </div>
+      </div>
+    </div>
+    <div id="game-container" class="display">
+      <div id="dibujo">
+        <canvas id="myCanvas" height="360" width="294"></canvas>
+      </div>
+      <div id="wordsContainer">
+        <div id="words"></div>
+        qc
+      </div>
+      <div id="wrong-letters"></div>
+      <div id="tableroBtn">
+        <button class="block" id="newGameBtn">Nuevo Juego</button>
+        <a id="desistirb" href="index.html"><p class="alinear">Desistir</p></a>
+      </div>
+    </div>
+  </body>
+</html>
